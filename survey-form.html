@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<style>
+    body {
+        background-color: rgb(143, 195, 241);
+    }
+    #title {
+        text-align: center;
+    }
+    #main {
+        background-color: antiquewhite;
+        border: 10px;
+        margin: 10px 300px 10px 300px;
+        padding: 10px;
+    }
+
+</style>
+<title>Seurvey-Form</title>
+<h1 id="title"> Survey Form </h1>
+<div id="main">
+    <p id="description"> Let us how we can improve freeCodeCamp</p>
+
+    <form action="#" id="survey-form">
+        <p id="name"> *Name: <input type="text" placeholder="Enter your name" required></p>
+        <p id="email"> *Email: <input type="text" placeholder="Enter your Email" required> </p>
+        <p> which option best describes your current role? 
+            <select name="current role">
+                <option value="student">Student</option>
+                <option value="Full time Job">Full time job</option>
+                <option value="Full time learner"> Full time learner</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="other"> Other</option>
+            </select>
+        </p>
+        <p>* How likely is that you would recommend freeCodeCamp to a friend? <br>
+            <input type="radio" id="definately" name="recomend">
+            <label for="definately">definately</label><br>
+            <input type="radio" id="May-be" name="recomend">
+            <label for="May-be"> May be</label><br>
+            <input type="radio" id="not-sure" name="recomend">
+            <label for="not-sure"> Not Sure</label>
+        </p>
+        <p>What do you like most in FCC:
+            <select name="like">
+                <option value="challenges">Challenges</option>
+                <option value="projects"> Projects</option>
+                <option value="Community">Community</option>
+                <option value="open-source">Open Source</option>
+            </select>
+        </p>
+
+        <p>Things that should be improved in the future (Check all that apply): <br>
+            <input type="checkbox" id="front-end" name="improve">
+            <label for="front-end">Front-end Projects</label> <br>
+            <input type="checkbox" id="back-end" name="improve">
+            <label for="back-end">Back-end Projects</label><br>
+            <input type="checkbox" id="data-visuallization" name="improve">
+            <label for="data-visuallization">Data Visuallization</label><br>
+            <input type="checkbox" id="challenges" name="improve">
+            <label for="challenges">Challenges</label><br>
+            <input type="checkbox" id="open-source-community" name="improve">
+            <label for="open-source-community">Open Source Community</label><br>
+            <input type="checkbox" id="gitter-helps-room" name="improve">
+            <label for="gittero-helps-room"> Gitter Helps Room </label><br>
+            <input type="checkbox" id="videos" name="improve">
+            <label for="videos">Videos</label><br>
+            <input type="checkbox" id="city-meetsup" name="improve">
+            <label for="city-meetsup">City Meetsup</label><br>
+            <input type="checkbox" id="wiki" name="improve">
+            <label for="wiki">Wiki</label><br>
+            <input type="checkbox" id="forum" name="improve">
+            <label for="forum">Forum</label><br>
+            <input type="checkbox" id="additional-course" name="improve">
+            <label for="additioal-course">Additonal Courses</label>
+        </p>
+
+        <p> Any Comments or suggetion? <input type="text" placeholder="Enter your comment here"></p>
+        <p> Upload additional file here:
+        <button>Attach File</button></p>
+        </fieldset>
+        <button type="submit" style="background-color: rgb(235, 135, 135)">Sunmit</button>
+    </form>
+
+</div>
